@@ -1,0 +1,4 @@
+{
+	"cmd": ["gregorio", "$file_name"],
+	"selector": "source.gabc"
+}

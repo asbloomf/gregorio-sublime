@@ -1,0 +1,23 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Gregorio
+scopeName: source.gabc
+fileTypes: [gabc]
+uuid: 6e090b32-e6ac-448a-9e97-4e8b6878e731
+
+patterns:
+  - match: "%.*$"
+    name: comment.line.source.gabc
+    comment: line comments
+  - match: \([^\)]*\)
+    name: keyword.source.gabc
+    comment: gabc stuff
+  - match: ^[^:\s]*(?=:)
+    name: string.unquoted.source.gabc
+  - match: (?<=:)[^;]*(?=;)
+    name: entity.name.source.gabc
+  - match: <[^>]*>
+    name: entity.name.tag.source.gabc
+  - match: </i>.*</i>
+    name: support.other.source.gabc
+...

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gabc</string>
+	</array>
+	<key>name</key>
+	<string>Gregorio</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>line comments</string>
+			<key>match</key>
+			<string>%.*$</string>
+			<key>name</key>
+			<string>comment.line.source.gabc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>gabc stuff</string>
+			<key>match</key>
+			<string>\([^\)]*\)</string>
+			<key>name</key>
+			<string>keyword.source.gabc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^[^:\s]*(?=:)</string>
+			<key>name</key>
+			<string>string.unquoted.source.gabc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=:)[^;]*(?=;)</string>
+			<key>name</key>
+			<string>entity.name.source.gabc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&lt;[^&gt;]*&gt;</string>
+			<key>name</key>
+			<string>entity.name.tag.source.gabc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&lt;/i&gt;.*&lt;/i&gt;</string>
+			<key>name</key>
+			<string>support.other.source.gabc</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.gabc</string>
+	<key>uuid</key>
+	<string>6e090b32-e6ac-448a-9e97-4e8b6878e731</string>
+</dict>
+</plist>
